@@ -1,2 +1,2 @@
-# API
-Projetos básicos de api usando diversas framework 
+# API-Rest
+Projeto basico utilizando express, babel, dotenv.
