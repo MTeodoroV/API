@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MTeodoroV/API.git"
@@ -21,6 +21,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
@@ -33,4 +34,3 @@
     "babel-preset-env": "^1.7.0"
   }
 }
-

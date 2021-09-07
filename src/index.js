@@ -1,13 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import CORS from 'cors';
-import User from './routes/user';
+import Movie from './routes/movie';
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(CORS());
 
-app.use('/', User);
+app.use('/', Movie);
 
 app.listen(3000);
