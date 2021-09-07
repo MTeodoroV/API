@@ -8,6 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(CORS());
 
-app.use('/', Movie);
+app.use('/movie', Movie);
 
 app.listen(3000);
