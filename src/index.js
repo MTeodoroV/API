@@ -4,6 +4,12 @@ import CORS from 'cors';
 import Movie from './routes/movie';
 import Series from './routes/series';
 
+const database = require('./config/database');
+const Table = require('./database/table');
+
+
+Table.init(database)
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
