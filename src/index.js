@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import CORS from 'cors';
 import Movie from './routes/movie';
 import Series from './routes/series';
+import Account from './routes/account';
 
 const database = require('./config/database');
 const Table = require('./database/table');
@@ -17,5 +18,6 @@ app.use(CORS());
 
 app.use('/movie', Movie);
 app.use('/series', Series);
+app.use('/account', Account);
 
 app.listen(3000);
