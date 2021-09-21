@@ -5,6 +5,7 @@ import Movie from './routes/movie';
 import Series from './routes/series';
 import Account from './routes/account';
 import Favorites from './routes/favorites';
+import WishList from './routes/wishList';
 
 const database = require('./config/database');
 const Table = require('./database/table');
@@ -21,5 +22,6 @@ app.use('/movie', Movie);
 app.use('/series', Series);
 app.use('/account', Account);
 app.use('/favorites', Favorites);
+app.use('/wishList', WishList);
 
 app.listen(3000);
