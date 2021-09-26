@@ -20,15 +20,6 @@ class AuthController {
 			res.status(500).send({ message: 'Logado', error });
 		});
 	}
-
-    static Logout(req, res) {
-        try {
-            res.status(200).send(JWT.destroy(token));
-        } catch(error) {
-            res.status(500).send({ message: 'Erro ao limpar o token', error });
-            console.log(error)
-        }
-    }
 }
 
 export default AuthController;
